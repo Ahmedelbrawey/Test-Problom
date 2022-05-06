@@ -52,7 +52,7 @@ function mangeImges(){
     imgs.forEach((img) => {
         img.classList.remove('show-img');
         img.style.opacity = "0";
-        img.style.display = 'none';
+        img.style.display = "none"; 
     });
 
     let cat = document.querySelectorAll(this.dataset.cat);
@@ -108,29 +108,6 @@ $(document).ready(function(){
     });
     
 });
-/*************************************
-    POP UP
-*************************************/
-const box_img = Array.from(document.querySelectorAll('#work_img div'));
 
-
-
-
-for(let i= 0; i< box_img.length;i++){
-    box_img[i].onclick =function Pop(){
-        box_img.forEach((box) => {
-            box.classList.remove('pop');
-            
-        });
-        this.classList.add('pop');
-    };
-    box_img[i].onclick =function remove_pop(){
-        this.classList.toggle('pop');
-        body.classList.toggle('blur');
-        
-        
-    };
-   
-}
 
 
